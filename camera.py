@@ -1,7 +1,14 @@
-import sys
-print(sys.path)
+# import sys
+# print(sys.path)
 
 import cv2
+
+# Check if cv2 is properly imported
+if cv2.__version__:
+    print(f"OpenCV version: {cv2.__version__}")
+    print("cv2 imported successfully!")
+else:
+    print("cv2 failed to import!")
 
 def main():
     # Initialize the USB camera

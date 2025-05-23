@@ -14,6 +14,7 @@ IF EXIST "venv" (
     python -m pip install pyyaml --no-warn-script-location
     python -m pip install ./mechae263C_helpers --no-warn-script-location
     python -m pip install ./dynamixel-controller --no-warn-script-location
+    
     python -m pip install opencv-python
     if errorlevel 1 (
         echo Error: Failed to install opencv-python.
